@@ -3,7 +3,6 @@ import youtube_dl
 
 app = Flask(__name__)
 
-ydl_opts = {}
 
 @app.route("/")
 @app.route("/home")
@@ -12,25 +11,22 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/terms-conditions.html")
+@app.route("/terms-conditions")
 def terms():
     return render_template("terms-conditions.html")
 
 
 @app.route("/privacy-policy.html")
 def privacy():
-    return render_template("privacy-policy.html")
+    return render_template("privacy-policy")
 
 
-@app.route("/download.html", methods=["GET","POST"])
+@app.route("/download", methods=["GET","POST"])
 def download():
     uLink = request.form['url']
-    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+    with youtube_dl.YoutubeDL() as ydl:
         url = ydl.extract_info(uLink, download=False)
         downloadLink = (url["formats"][-1]["url"])
-        
-        # downloadLink = uLink.strip()
-        # ydl.download([downloadLink])
         
     return redirect(downloadLink+"&dl=1")
 
