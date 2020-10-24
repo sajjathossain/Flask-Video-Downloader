@@ -44,18 +44,19 @@
 
             <div class="col-lg-8 text-center">
                 <h4 class="text-center alert-heading">Enter Your Download Link Here</h4 class="text-center">
-                <!-- Contact Form -->
-                <form id="contactForm" data-toggle="validator" data-focus="false" class="text-center">
+                <!-- Download Form -->
+                <form id="downloadForm" action="/download.html" method="POST" data-toggle="validator" data-focus="false"
+                    class="text-center">
                     <div class="form-group">
-                        <input type="text" class="form form-control" id="d_link" placeholder="Enter Download Link Here*"
-                            required>
+                        <input type="text" name="url" class="form form-control" id="d_link"
+                            placeholder="Enter Download Link Here*" required>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div>
                         <input type="submit" value="Download" class="btn btn-success">
                     </div>
                 </form>
-                <!-- end of contact form -->
+                <!-- end of Download Form -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
