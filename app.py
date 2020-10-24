@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 @app.route("/home")
-@app.route("/index.html")
+@app.route("/index")
 def home():
     return render_template("index.html")
 
@@ -16,9 +16,9 @@ def terms():
     return render_template("terms-conditions.html")
 
 
-@app.route("/privacy-policy.html")
+@app.route("/privacy-policy")
 def privacy():
-    return render_template("privacy-policy")
+    return render_template("privacy-policy.html")
 
 
 @app.route("/download", methods=["GET","POST"])
