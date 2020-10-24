@@ -1,2 +1,0 @@
-flask
-youtube-dl==2020.9.20
