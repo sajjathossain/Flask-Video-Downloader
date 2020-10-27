@@ -1,5 +1,8 @@
-from flask import Flask, render_template, redirect, request
-import youtube_dl
+from flask import Flask
+from flask import render_template
+from flask import redirect
+from flask import request
+from youtube_dl import youtube_dl
 
 app = Flask(__name__)
 
