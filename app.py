@@ -5,23 +5,23 @@ app = Flask(__name__)
 
 
 @app.route("/")
-@app.route("/home")
-@app.route("/index")
+@app.route("/home/")
+@app.route("/index/")
 def home():
     return render_template("index.html")
 
 
-@app.route("/terms-conditions")
+@app.route("/terms-conditions/")
 def terms():
     return render_template("terms-conditions.html")
 
 
-@app.route("/privacy-policy")
+@app.route("/privacy-policy/")
 def privacy():
     return render_template("privacy-policy.html")
 
 
-@app.route("/download", methods=["GET","POST"])
+@app.route("/download/", methods=["GET","POST"])
 def download():
     uLink = request.form['url']
     with youtube_dl.YoutubeDL() as ydl:
