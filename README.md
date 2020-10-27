@@ -2,12 +2,14 @@
 
 **[Youtube Downloading is Currently In Development State]()**
 
+<hr>
+
 ## Technologies Used :
 
 - Flask
 - Youtube-dl
 
-##[Website Images]()
+## [Website Images]()
 
 **Screenshot 1**
 <img src="./static/readme/S1.png" width="100%">
@@ -20,6 +22,9 @@
 
 ##[Requirements to use the source code :]()
 **You can use [Virtual Environment]() : It must be installed in the project root directory**
+
+##### [Venv]() must stay active as long as the programme runs if you wish to use it
+
 **Run the given command to create [virtual env]() and run it**
 
 ```
@@ -27,17 +32,17 @@
 py -m venv envName
 
 # Run your virtual Environment :
-source ./env/Scripts/activate
+source ./envName/Scripts/activate
 
 or in some cases :
-./env/Scripts/activate
+./envName/Scripts/activate
 
 # Deactivate virtual env :
 deactivate
+
 ```
 
-**Install all [dependencies]() from the [requirments.txt](requirements.txt) file :**
-#####Venv must be actvated as long the programme runs if you wish to use venv
+**Install all [dependencies]() from the [requirments.txt](requirements.txt) file : Use [pip3]() if have python 2 and 3 both installed**
 
 ```
 # First goto to the project directory :
@@ -45,14 +50,16 @@ cd directoryName
 
 # Install dependencies :
 pip install -r requirments.txt
+
 ```
 
 **Now you are ready to use the programme on your [Local Machine]()**
 **To [run it]() type the given command**
 
 ```
-# Use python3 if you are using mac or linux or older version of python :
+# Use python3 if have python 2 and 3 both installed:
 python app.py
+
 ```
 
 ### Please let me know if there is/are [any room for improvement(s)](). If you like [my project]() please give it star. [Thank You.]()
