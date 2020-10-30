@@ -7,7 +7,7 @@ import youtube_dl
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("")
 @app.route("/home")
 @app.route("/index")
 def home():
