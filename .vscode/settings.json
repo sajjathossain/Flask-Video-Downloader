@@ -2,7 +2,7 @@
     "cSpell.words": [
         "Youtube"
     ],
-    "python.pythonPath": "env\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Users\\Admin\\anaconda3\\python.exe",
     "python.testing.pytestArgs": [
         "."
     ],

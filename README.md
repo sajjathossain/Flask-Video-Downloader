@@ -6,8 +6,11 @@
 
 ## Technologies Used :
 
-- Flask
-- Youtube-dl
+<img src="https://img.shields.io/badge/python-%233776AB.svg?&style=for-the-badge&logo=python&logoColor=white" width="auto">
+<img src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white" width="auto">
+<img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white" width="auto">
+
+**[Youtube-dl]()**
 
 ## [Website Images]()
 
