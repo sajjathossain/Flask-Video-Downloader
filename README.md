@@ -12,16 +12,10 @@
 
 **[Youtube-dl]()**
 
-## [Website Images]()
+## [Website Image]()
 
-**Screenshot 1**
-<img src="./static/readme/S1.png" width="100%">
+<img src="./static/readme/fullPage.png" height="1200vh" width="400vw">
 
-**Screenshot 2 : [Enter Your Link Here]()**
-<img src="./static/readme/S2.png" width="100%">
-
-**Screenshot 3**
-<img src="./static/readme/S3.png" width="100%">
 
 ## [Requirements to use the source code :]()
 
