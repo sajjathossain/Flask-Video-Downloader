@@ -14,7 +14,8 @@
 
 ## [Website Image]()
 
-<img src="./static/readme/fullPage.png" height="auto" width="500vw">
+<img src="./static/readme/S1.png" height="auto" width="250vw">
+<img src="./static/readme/S2.png" height="auto" width="185vw">
 
 ## [Requirements to use the source code :]()
 
