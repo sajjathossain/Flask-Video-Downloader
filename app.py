@@ -52,17 +52,17 @@ def download():
     # return render_template("download.html", vals=formatsID)
 
 
-# To download the best available video!
-@app.route("/downloadBest", methods=["GET", "POST"])
-def downloadBest():
-    dnLink = request.form['fUrl']
-    formatsID = int(request.form["fId"])
-    with youtube_dl.YoutubeDL() as ydl:
-        url = ydl.extract_info(dnLink, download=False)
-        downloadLink = (url["formats"][-1]["url"])
+# # To download the best available video!
+# @app.route("/downloadBest", methods=["GET", "POST"])
+# def downloadBest():
+#     dnLink = request.form['fUrl']
+#     formatsID = int(request.form["fId"])
+#     with youtube_dl.YoutubeDL() as ydl:
+#         url = ydl.extract_info(dnLink, download=False)
+#         downloadLink = (url["formats"][-1]["url"])
         
-    # return redirect(downloadLink+"&dl=1")
-    return render_template("download.html", vals=formatsID)
+#     return redirect(downloadLink+"&dl=1")
+#     # return render_template("download.html", vals=formatsID)
 
 
 if __name__ == "__main__":

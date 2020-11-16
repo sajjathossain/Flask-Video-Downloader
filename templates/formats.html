@@ -43,8 +43,6 @@
 
 
             <div class="col-lg-8 text-center">
-                <form id="downloadForm" action="/download" method="POST" data-toggle="validator" data-focus="false"
-                    class="text-center">               
                         <table class="table table-bordered">
                         <thead class="thead-dark">
                             <tr>
@@ -55,21 +53,23 @@
                         <tbody>
                         {% for vf in vFormats : %}
                             {% if vf['width']==None or vf['ext']=='mp4' : %}
-                                <tr>
-                                <td><input value="{{tLink}}" type="hidden" name="fUrl"><p class="alert alert-primary">{{vf['ext']}}</p></td>
-                                <td><input value="{{vFormats.index(vf)}}" type="hidden" name="fId"> <input type="submit" value="Download" class="btn btn-success" ></td>
-                                </tr>
+                                <form id="downloadForm" action="/download" method="POST" data-toggle="validator" data-focus="false"
+                                    class="text-center">               
+                                    <tr>
+                                        <td><input value="{{tLink}}" type="hidden" name="fUrl"><p class="alert alert-primary">{{vf['ext']}}</p></td>
+                                        <td><input value="{{vFormats.index(vf)}}" type="hidden" name="fId"> <input type="submit" value="Download" class="btn btn-success" ></td>
+                                    </tr>
+                                </form>
                             {%endif%}
                         {% endfor %}
-                </form>
-                <form id="downloadForm" action="/downloadBest" method="POST" data-toggle="validator" data-focus="false"
+                <!-- <form id="downloadForm" action="/downloadBest" method="POST" data-toggle="validator" data-focus="false"
                     class="text-center"> 
                         <tr>
                             <td><input value="{{tLink}}" type="hidden" name="fUrl"><p class="alert alert-primary">Best Video 😎</p></td>
                             <td><input value="999" type="hidden" name="fId"> <input type="submit" value="Download" class="btn btn-success" ></td>
                         </tr>
                         </tbody>
-                </form>
+                </form> -->
                 </table>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
