@@ -61,8 +61,8 @@ def downloadBest():
         url = ydl.extract_info(dnLink, download=False)
         downloadLink = (url["formats"][-1]["url"])
         
-    return redirect(downloadLink+"&dl=1")
-    # return render_template("download.html", vals=formatsID)
+    # return redirect(downloadLink+"&dl=1")
+    return render_template("download.html", vals=formatsID)
 
 
 if __name__ == "__main__":
